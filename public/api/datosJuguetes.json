@@ -1,0 +1,39 @@
+ [
+    {
+        "codigo": 1546,
+        "nombre": "He-Man",
+        "precio": 95000,
+        "stock": 50,
+        "imagen":"images/he-man.png"
+    },
+    {
+        "codigo": 1856,
+        "nombre": "Orko",
+        "precio": 40000,
+        "stock": 80,
+        "imagen":"images/orko.png"
+    },
+    {
+        "codigo": 3546,
+        "nombre": "Teela",
+        "precio": 30000,
+        "stock": 500,
+        "imagen":"images/teela.png"
+    },
+    {
+        "codigo": 536,
+        "nombre": "Skeletor",
+        "precio": 85000,
+        "stock": 50,
+        "imagen":"images/skeletor.png"
+    },
+    {
+        "codigo": 7746,
+        "nombre": "Battle Cat",
+        "precio": 35000,
+        "stock": 50,
+        "imagen":"images/battlecat.png"
+    }
+
+]
+
