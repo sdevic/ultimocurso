@@ -30,8 +30,11 @@ function ListaJuguetes(){
                 {loading ?(<p>cargando personajes</p>):(
                     <ul className="listaJuguetes">
                         {personajes.map((personaje) =>(
+                            
                             <li key={personaje.codigo} className="personaje-item">
+                                <hr></hr>
                                 <h3>{personaje.nombre}</h3>
+                                <p>Precio: $ {personaje.precio}</p>
                                 <Link to={`./DetalleJuguete/${personaje.codigo}`}>Ver detalle</Link>
                                 
                             </li>
