@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { detallejugueteJson } from "./datosJuguetes";
+import { detallejugueteJson } from "./datosjuguetes";
 import { Link, useParams } from "react-router-dom";
 
 
