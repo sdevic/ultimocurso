@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { juguetesJson } from "./datosJuguetes";
 import { Link } from "react-router-dom";
-
+import DetalleJuguete from "./DetalleJuguete";
 
 function ListaJuguetes(){
 
@@ -14,7 +14,7 @@ function ListaJuguetes(){
                 setPersonajes(data);
                 setLoading(false);
             }catch(error){
-                    console.error("error fecth data",error);
+                
                     setLoading(false);
                 }
             };
@@ -29,18 +29,13 @@ function ListaJuguetes(){
                 
                 {loading ?(<p>cargando personajes</p>):(
                     <ul className="listaJuguetes">
-                        
                         {personajes.map((personaje) =>(
                             <li key={personaje.codigo} className="personaje-item">
-                               <hr></hr>
                                 <h3>{personaje.nombre}</h3>
-                                <p>Precio: $ {personaje.precio}</p>
                                 <Link to={`./DetalleJuguete/${personaje.codigo}`}>Ver detalle</Link>
-                                
                                 
                             </li>
                         ))}
-                        
                     </ul>
                 )}
             </div>

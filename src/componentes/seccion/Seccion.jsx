@@ -14,7 +14,8 @@ function Seccion(){
         <section className="body">
            
             <img src={heman} />  
-            
+            <Boton texto = "ver"  />
+            <Boton color="red" texto = "Desver" onClick={handleClicBoton} />
            
         </section>
     )
