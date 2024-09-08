@@ -21,7 +21,7 @@ export const detallejugueteJson = async ()=>{
    try{
     const response = await fetch(BASE_URL)
     const data = await response.json();
-    xonsole.log(data)
+    console.log(data)
     return data;
    }catch(eror){  
     console.error("error fecth data",error);
